@@ -6,6 +6,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist",
     "start": "live-server src",
+    "build": "npx parcel src/index.html --open",
     "dev": "npx parcel src/index.html --open",
     "correct": "npx stylelint src/css/*.css --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +21,7 @@
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "lodash-es": "^4.0.0"
   }
 }
